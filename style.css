@@ -1,0 +1,144 @@
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  width: 100vw;
+  color: white;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2), 0 0 10px rgba(255, 255, 255, 0.2), 0 0 15px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.2); /* Adjusted Glow Effect */
+  z-index: 99;
+  position: absolute;
+  width: 50vw;
+  min-width: 400px;
+  display: flex;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  flex-direction: column;
+}
+
+
+header {
+  font-size: 40px;
+  padding: 2rem;
+  margin-bottom: 20px;
+}
+
+section {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.quote {
+  min-height: 220px;
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+}
+
+.image-container {
+  width: 50vw;
+  height: 28.125vw;
+  min-width: 400px;
+  min-height: 225px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+.image-container:hover {
+  box-shadow: 0 0 20px #0095ff;
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.external-links {
+  position: relative;
+  right: -78vw;
+}
+.fa-brands {
+  font-size: 32px;
+  color: white;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+.fa-brands:hover {
+  animation: skyblue 5s infinite;
+  font-size: 50px;
+}
+
+
+.image-bug {
+  display: none;
+}
+
+@keyframes skyblue {
+  0% {
+    color: #add8e6; /* light blue */
+  }
+  25% {
+    color: #00bfff; /* deep sky blue */
+  }
+  50% {
+    color: #1e90ff; /* dodger blue */
+  }
+  75% {
+    color: #4169e1; /* royal blue */
+  }
+  100% {
+    color: #0000cd; /* medium blue */
+  }
+}
+
+
+.quote {
+  font-size: 50px;
+  animation: quote 5s infinite;
+}
+
+@keyframes quote {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-inner-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    justify-content: center;
+  }
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden; /* This will hide horizontal scroll bar */
+}
