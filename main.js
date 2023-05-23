@@ -93,7 +93,7 @@ function animate() {
 animate();
 
 // Load the texture for the tail particles
-const tailTexture = new THREE.TextureLoader().load("assets/star.png"); // <-- Replace 'assets/tail.png' with the path to your texture file
+const tailTexture = new THREE.TextureLoader().load("assets/star.79cace86.png"); // <-- Replace 'assets/tail.png' with the path to your texture file
 
 const tailMaterial = new THREE.PointsMaterial({
   map: tailTexture, // assign the new texture to the tail particles
