@@ -42,7 +42,9 @@ function addStar() {
 
 Array(420).fill().forEach(addStar);
 
-const spaceTexture = new THREE.TextureLoader().load("assets/background.png");
+const spaceTexture = new THREE.TextureLoader().load(
+  "assets/background.4821861c.png"
+);
 scene.background = spaceTexture;
 
 function onWindowResize() {
@@ -54,7 +56,9 @@ function onWindowResize() {
 window.addEventListener("resize", onWindowResize);
 
 // Load the texture
-const starTexture = new THREE.TextureLoader().load("assets/space.png"); // <-- Replace 'assets/yourStarTexture.png' with the path to your texture file
+const starTexture = new THREE.TextureLoader().load(
+  "assets/space.71a4ff60.png "
+); // <-- Replace 'assets/yourStarTexture.png' with the path to your texture file
 
 const starMaterial = new THREE.MeshStandardMaterial({
   map: starTexture, // assign the texture as a map to the material
